@@ -10,25 +10,13 @@
        <div class="indx-logo">
        <img src="img/index-logo.png"widgth="0" height="0" alt="Nerds">
        </div>
-                <nav class="main-navigation">
-             <ul>
-             <li>
-               <a href="#">студия</a>
-            </li>
-             <li>
+               <nav class="main-header-menu">
+                <a href="index.html">студия</a>
                 <a href="#">клиенты</a>
-            </li>
-            <li>
-                <a href="#">магазин</a>
-              </li>
-            <li>
-                <a href="#"> контакты</a>
-            </li>
-            <li>
-                <a href="#" class="basket">корзина</a>
-            </li>
-            </ul>
-           </nav>
+                <a href="catalog.html" class="current">магазин</a>
+                <a href="#">контакты</a>
+                <a href="#" class="main-menu-cart">корзина</a>
+            </nav>
       </div>
   </header>
 <h1>Магазин готовых шаблонов</h1>
@@ -44,10 +32,16 @@
     <div class=" toggle main-toggle"</div>
     <div class=" toggle main-toggle"</div>
     </div>
-    <div class=" price-controls"></div>
-    от <input class="mai-price" type="text" value="0">
-    до <input class="max-price" type="text" value="15000"></div></div>
+    <span class="catalog-price-from">от</span>
+    <input class="catalog-min-price" type="text" value="0">
+</div>
+<div class="catalog-controls-right">
+    <span class="catalog-price-till">до</span>
+    <input class="catalog-max-price" type="text" value="15 000">
+
+
     <div class="grid">
+
       <h3>СЕТКА:</h3>
       <label><input="radio" Name="adaptive" value="adaptive">Адаптивная</label>
       <label><input="radio" Name="adaptive" value="fixed">Фиксированная</label>
@@ -55,22 +49,24 @@
     </div>
     <div class="features">
       <h3>Особенности</h3>
-      <ul>
-      <input type="checkboks" name="slider" id="slider-fixed">
-      <label for="slider-fixed">Слайдер</label>
-
-      <input type="checkboks" name="advatages" id="advatages-fixed">
-      <label for="advatages-fixed">Блок преимуществ</label>
-
-      <input type="checkboks" name="news" id="news-fixed">
-      <label for="news-fixed">Новости</label>
-
-      <input type="checkboks" name="gallery" id="gallery-fixed">
-      <label for="gallery-fixed">Галерея</label>
-
-      <input type="checkboks" name="basket" id="basket-fixed">
-      <label for="basket-fixed">Корзина</label>
-      </ul>
+      <input type="radio" name="grid" id="adaptive" value="adaptive" checked>
+      <label class="catalog-label" for="adaptive">Адаптивная</label>
+      <input type="radio" name="grid" id="rubber" value="rubber">
+      <label class="catalog-label" for="rubber">Резинования</label>
+      <input type="radio" name="grid" id="fixed" value="fixed" disabled>
+      <label class="catalog-label" for="fixed">Фиксированная</label>
+      <h3 class="catalog-filter-title catalog-features-title">Особенности:</h3>
+      <input id="slider" name="slider" type="checkbox" value="slider" checked>
+      <label class="catalog-label" for="slider">Слайдер</label>
+      <input id="advantages" name="advantages" type="checkbox" value="advantages" disabled>
+      <label class="catalog-label" for="advantages">Блок преимуществ</label>
+      <input id="news" name="news" type="checkbox" value="news" checked>
+      <label class="catalog-label" for="news">Новости</label>
+      <input id="gallery" name="gallery" type="checkbox" value="gallery">
+      <label class="catalog-label" for="gallery">Галлерея</label>
+      <input id="cart" name="cart" type="checkbox" value="cart">
+      <label class="catalog-label" for="cart">Корзина</label>
+      <button type="submit" class="btn filter-btn">Показать</button>
     </div>
     <a class="bth" href="#">Показать</a>
   </div>
@@ -81,13 +77,114 @@
       <a href="#">По типу</a>
       <a href="#">По названию</a>
     </div>
-    <section class-"catalog">
-      <div class="mack-up1">
-        <img src="#" width="240" height="270" alt="">
-      </div>
-      <div class="mack-up2">
-          <img src="#" width="240" height="270" alt="">
-        </div>
-        </footer>
-        </body>
-        </html>
+    <section class-"block-catalog">
+
+        <a href="#" class="mack-up1">
+            <figure class="catalog-image">
+                <img src="img/catalog-img-desert.jpg" width="240" height="240" alt="Sedona Hover">
+            </figure>
+            <div class="catalog-item-block">
+                <h3 class="catalog-item-title">Sedona</h3>
+                <p class="catalog-item-info">Информационный сайт для туристов</p>
+                <span class="btn catalog-item-btn">9900 Руб.</span>
+            </div>
+
+            <a href="#" class="mack-up1">
+                <figure class="catalog-image">
+                    <img src="img/catalog-img-desert.jpg" width="240" height="240" alt="Sedona">
+                </figure>
+                <div class="catalog-item-block">
+                    <h3 class="catalog-item-title">Sedona Hover</h3>
+                    <p class="catalog-item-info">Информационный сайт для туристов</p>
+                    <span class="btn catalog-item-btn">9900 Руб.</span>
+                </div>
+
+                <a href="#" class="mack-up2">
+                    <figure class="catalog-image">
+                        <img src="img/catalog-img-desert.jpg" width="240" height="240" alt="Взгляните на жизнь иначе">
+                    </figure>
+                    <div class="catalog-item-block">
+                        <h3 class="catalog-item-title">Pink Hover</h3>
+                        <p class="catalog-item-info">Устали от серости мего полиса ? Нам есть, что Вам предложить!</p>
+                        <span class="btn catalog-item-btn">"#"</span>
+                    </div>
+
+                    <a href="#" class="mack-up3">
+                        <figure class="catalog-image">
+                            <img src="img/catalog-img-desert.jpg" width="240" height="240" alt="Barbershop">
+                        </figure>
+                        <div class="catalog-item-block">
+                            <h3 class="catalog-item-title"Barbershop Hover</h3>
+                            <p class="catalog-item-info">Стрижка у нас это выгодно!</p>
+                            <span class="btn catalog-item-btn">#</span>
+                        </div>
+
+                        <a href="#" class="mack-up4">
+                            <figure class="catalog-image">
+                                <img src="img/catalog-img-desert.jpg" width="240" height="240" alt="Mishka">
+                            </figure>
+                            <div class="catalog-item-block">
+                                <h3 class="catalog-item-title">Mishka Hover</h3>
+                                <p class="catalog-item-info">Вязаные корзинки</p>
+                                <span class="btn catalog-item-btn">9900 Руб.</span>
+                            </div>
+
+                            <a href="#" class="mack-up5">
+                                <figure class="catalog-image">
+                                    <img src="img/catalog-img-desert.jpg" width="240" height="240" alt="A Plus">
+                                </figure>
+                                <div class="catalog-item-block">
+                                    <h3 class="catalog-item-title">A Plus Hover</h3>
+                                    <p class="catalog-item-info">Учеба еще никогда не была такой интересной</p>
+                                    <span class="btn catalog-item-btn">Обратная связь</span>
+                                </div>
+
+                                <a href="#" class="mack-up6">
+                                    <figure class="catalog-image">
+                                        <img src="img/catalog-img-desert.jpg" width="240" height="240" alt="Kvast">
+                                    </figure>
+                                    <div class="catalog-item-block">
+                                        <h3 class="catalog-item-title">Kvast Hover</h3>
+                                        <p class="catalog-item-info">Крафтовый квас всему голова!</p>
+                                        <span class="btn catalog-item-btn">9900 Руб.</span>
+                                      </div>
+                                    </a>
+                                </div>
+                                <div class="catalog-paginator">
+                                    <span class="catalog-paginator-active">1</span>
+                                    <a href="#">2</a>
+                                    <a href="#">3</a>
+                                    <a href="#" class="catalog-paginator-next">Следующая</a>
+                                </div>
+                            </div>
+                        </div>
+                    </main>
+                    <footer>
+                        <div class="map">
+                            <div class="map-script"></div>
+                            <div class="container">
+                                <div class="map-block">
+                                    <h3 class="map-block-title">Nerds design studio</h3>
+                                    <p class="map-block-info">350000, Краснодар, ул. Головатого, 100</p>
+                                    <p class="map-block-info">тел. +7 (861) 275-75-75</p>
+                                    <a href="feedback.html" class="btn map-btn">Напишите нам</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="contanier">
+                            <section class="footer-social"></section>
+                            <div class="social vk"></div>
+                            <a href="#" target="_blank"><i class="fa fa-vk fa-2x"></i>ВКонтакте</a>
+                            <div class="social facebook"></div>
+                            <a href="#" target="_blank"><i class="fa fa-facebook fa-2x"></i>Фуйсбук</a>
+                            <div class="social instagram"></div>
+                          <a href="#" target="_blank"><i class="fa fa-instagram fa-2x"></i>Инстограм</a>
+                            </section>
+                            <section class="footer-friends">
+                              <h2>Давайте дружить, это выгодно!</h2>
+                              Скидка 10% для друзей из социальных сетей
+                            </section>
+                          </div>
+                        </footer>
+                      </body>
+                      </html>
