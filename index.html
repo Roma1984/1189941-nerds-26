@@ -1,102 +1,149 @@
 <!DOCTYPE html>
 <html lang="ru">
   <head>
-    <meta charset="utf-8">
+    <meta charset="utf-8" />
     <title>HTML Academy: Нёрдс</title>
   </head>
+
   <body>
-  <header class="main-header">
-     <div class="container">
-       <div class="indx-logo">
-       <img src="img/index-logo.png" widgth="140" height="57" alt="Nerds">
-       </div>
-       <nav class="main-header-menu">
-        <a href="index.html">студия</a>
-        <a href="#">клиенты</a>
-        <a href="catalog.html" class="current">магазин</a>
-        <a href="#">контакты</a>
-    </nav>
-    <a href="#" class="main-menu-cart">корзина</a>
+    <header class="main-header">
+      <div class="container">
+        <a class="index-logo">
+          <img src="img/index-logo.png" width="140" height="57" alt="Nerds" />
+        </a>
+        <nav class="main-header-menu">
+          <a class="active">студия</a>
+          <a href="#">клиенты</a>
+          <a href="catalog.html">магазин</a>
+          <a href="#">контакты</a>
+        </nav>
+        <div class="main-menu-cart">
+          <a href="#" class="main-menu-cart">корзина</a>
+        </div>
       </div>
-      <section class="slider">
-        <b class="slider-name">Долго, дорого, скурпулезно.</b>
-        <p>Математически выверенный дизайн для вашего сайта или мобильного приложения.</p>
-        <a class="bth" href="#"> узнать больше</a>
-      </section>
     </header>
-      <main class="container">
-        <section>
-        <div class="block-1">
-          <img src="img/index-logo/png" widgth="240" height="124" alt="">
+
+    <main class="container">
+      <section class="slider">
+        <div>
+          <b class="slider-name">Долго, дорого, скурпулезно.</b>
+          <p>
+            Математически выверенный дизайн для вашего сайта или мобильного
+            приложения.
+          </p>
+          <a class="bth" href="#"> узнать больше</a>
+        </div>
+
+        <div>
+          <b class="slider-name">Любим математику как никто другой</b>
+          <p>
+            Никакого креатива, только математические формулы для расчета
+            идеальных пропорций
+          </p>
+          <a class="bth" href="#"> узнать больше</a>
+        </div>
+
+        <div>
+          <b class="slider-name">Только ночь, только хардкор</b>
+          <p>Работать днем, как все? Мы против этого. Ближе к полуночи работ</p>
+          <a class="bth" href="#"> узнать больше</a>
+        </div>
+      </section>
+
+      <section class="list">
+        <div class="item">
+          <img src="img/index-logo/png" width="240" height="124" alt="" />
           <h3>Веб-сайты</h3>
           <p>Мир никогда не будет прежним после того как увидит ваш сайт!</p>
           <a class="bth" href="#">заказать</a>
         </div>
 
-        <div class="block-2">
-            <img src="img/index-logo/png" widgth="240" height="124" alt="">
+        <div class="item">
+          <img src="img/index-logo/png" width="240" height="124" alt="" />
           <h3>Приложения</h3>
           <p>Покорите топ-10 приложений в AppStrore и Google Play</p>
           <a class="bth" href="#">заказать</a>
         </div>
 
-        <div class="block-3">
-            <img src="img/index-logo/png" widgth="240" height="124" alt="1">
-            <h3>Презентации</h3>
-            <p>Вы даже не подозреваете, насколько вы изумительны!</p>
-            <a class="bth" href="#">заказать</a>
-            </div>
-          </section>
+        <div class="item">
+          <img src="img/index-logo/png" width="240" height="124" alt="1" />
+          <h3>Презентации</h3>
+          <p>Вы даже не подозреваете, насколько вы изумительны!</p>
+          <a class="bth" href="#">заказать</a>
+        </div>
+      </section>
+
       <div class="about-content">
-      <div class="about-left-column">
-        <h1>Мы — маленькая, но гордая дизайн-студия из Краснодара.</h1>
-        <p>Исповедуем принципы минимализма и чистоты. Ставим математический расчет выше креатива. Работаем не покладая рук, как роботы.</p>
-        <p>Выполняем заказы на разработку:</p>
-        <ul>
-          <li>Веб-сайтов любой сложности</li>
-          <li>Мобильных приложений для iOS и Android</li>
-          <li>Слайдшоу и видео для корпоративных презентаций</li>
-        </ul>
-      </div>
-      <div class="about-right-column">
-        <img src="img/photo-1.jpg" widgth="240" height="120" alt="1">
-        <p>sinse 2004</p>
-        <p>Как мы работаем:</p>
-        <ul>
-          <li>С самоотдачей 146%</li>
-          <li>Соблюдая сроки на 100%</li>
-          <li>По предоплате 50%</li>
-        </ul>
+        <div class="left-column">
+          <b>Мы — маленькая, но гордая дизайн-студия из Краснодара.</b>
+          <p>
+            Исповедуем принципы минимализма и чистоты. Ставим математический
+            расчет выше креатива. Работаем не покладая рук, как роботы.
+          </p>
+          <p>Выполняем заказы на разработку:</p>
+          <ul>
+            <li>Веб-сайтов любой сложности</li>
+            <li>Мобильных приложений для iOS и Android</li>
+            <li>Слайдшоу и видео для корпоративных презентаций</li>
+          </ul>
+        </div>
+        <div class="right-column">
+          <img src="img/photo-1.jpg" width="240" height="120" alt="1" />
+          <p>sinse 2004</p>
+          <p>Как мы работаем:</p>
+          <ul>
+            <li>
+              Уровень самоотдачи <span>146<sup>%</sup></span>
+            </li>
+            <li>
+              Соблюдение сроков <span>100<sup>%</sup></span>
+            </li>
+            <li>
+              Минимальная преоплата <span>50<sup>%</sup></span>
+            </li>
+          </ul>
+        </div>
       </div>
       <div class="partner">
-        <a href="#"></a>
-        <a href="#"><img src="img.jpg" width="240" height="88" alt="Glukhanko"></a>
-        <a href="#"><img src="img.jpg" width="240" height="88" alt="HTML Academy"></a>
-        <a href="#"><img src="img.jpg" width="240" height="88" alt="Barbershop Borodinsky"></a>
+        <a class="partner-item" href="#"
+          ><img src="img.jpg" width="240" height="88" alt="Html academy"
+        /></a>
+        <a class="partner-item" href="#"
+          ><img
+            src="img.jpg"
+            width="240"
+            height="88"
+            alt="Barbershop Borodinsky"
+        /></a>
+        <a class="partner-item" href="#"
+          ><img src="img.jpg" width="240" height="88" alt="Pink"
+        /></a>
+        <a class="partner-item" href="#"
+          ><img src="img.jpg" width="240" height="88" alt="Mishka"
+        /></a>
       </div>
-      div class="contacts">
-      <p>Nёrds design studio</p>
-       191186, Санкт-Петербург, ул. Б. Конюшенная, 19/8
-      <p><a href="#">tel:+7(812)2757575</a></p>
-      <p>
-        <a class="bth" href="#">напишите нам</a> </p>
+    </main>
+    <footer class="main-footer">
+      <div class="contacts">
+        <h3>Nёrds design studio</h3>
+        <p>191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
+        <p>тел. <a href="tel:+78122757575">+7(812)2757575</a></p>
+        <a class="bth" href="#">напишите нам</a>
       </div>
       <section class="map">
-        <img src="#" width="0" height="0" alt="">
+        <img src="#" width="0" height="0" alt="" />
       </section>
-    </main>
-      <footer class="main-footer">
-        <div class="contanier">
-          <section class="footer-social"></section>
+      <div class="contanier">
+        <section class="footer-social">
           <a class="social-bth social-bth-vk" href="#">ВКонтакте</a>
-          <a class="social-bth social-bth-fb" href="#">Фуйсбук</a>
+          <a class="social-bth social-bth-fb" href="#">Фейсбук</a>
           <a class="social-bth social-bth-inst" href="#">Инстограмм</a>
-          </section>
-          <section class="footer-friends">
-            <p>Давайте дружить, это выгодно!</p>
-           <p>Скидка 10% для друзей из социальных сетей</p>
-          </section>
-        </div>
-      </footer>
-    </body>
-    </html>
+        </section>
+        <section class="footer-friends">
+          <b>Давайте дружить, это выгодно!</b>
+          <p>Скидка 10% для друзей из социальных сетей</p>
+        </section>
+      </div>
+    </footer>
+  </body>
+</html>
