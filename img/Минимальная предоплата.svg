@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="105" height="34" viewBox="0 0 105 34">
+  <defs>
+    <style>
+      .cls-1 {
+        font-size: 16px;
+        fill: #283136;
+        font-family: Roboto;
+      }
+    </style>
+  </defs>
+  <text id="Минимальная_предоплата" data-name="Минимальная предоплата" class="cls-1" x="-0.593" y="11.539">Минимальная<tspan x="-0.593" dy="19.2">предоплата</tspan></text>
+</svg>

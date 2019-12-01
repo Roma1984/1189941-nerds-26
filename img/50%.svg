@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="68" height="35" viewBox="0 0 68 35">
+  <defs>
+    <style>
+      .cls-1 {
+        font-size: 107.364px;
+        font-family: Roboto;
+        font-weight: 700;
+      }
+
+      .cls-2 {
+        font-size: 54px;
+      }
+    </style>
+  </defs>
+  <text id="_50_" data-name="50%" class="cls-1" transform="translate(-2.047 34.475) scale(0.419)">50<tspan class="cls-2" dy="-32.4">%</tspan></text>
+</svg>
