@@ -1,3 +1,1 @@
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="15" height="15" viewBox="0 0 15 15">
-  <image id="cart-icon" width="15" height="15" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA8AAAAPCAYAAAA71pVKAAAAs0lEQVQokaXTMYpCQRAE0Oei7qaexMi7eCmjjUwNfmy0gQcQEcUbmGq4maIrfxkY9Tt8ZdSCpoPqorqpmUZRFKUrFujJxEcy1sXnM+JOrA1a2KPMqSD+jTXNdaw6nzF/R/yW8xJ/r4p3WGVothiEZJoJMb+Tc0hgjBEmOKXOHtz9hT5+4mmXqKqYZax9Qbr2Go1ccer8jUPsdbjhw8eoDgUiPNEj2jXqGz51HkYi9DpcefwDw/wztybPfTEAAAAASUVORK5CYII="/>
-</svg>
+<svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 15 15"><circle fill="#a6a6a6" cx="4.5" cy="13.5" r="1.5"/><circle fill="#a6a6a6" cx="12.5" cy="13.5" r="1.5"/><path fill="#a6a6a6" d="M15 2H4.07l-.422-2H0v2h2.031l1.985 9H15V9H9.441L15 6.951z"/></svg>

@@ -9,7 +9,7 @@
     <header class="page-header">
       <div class="container">
         <a class="logo">
-          <img src="img/nerds-logo.svg" width="100" height="50" alt="Nerds" />
+          <img src="img/nerds-logo.svg" width="160" height="65" alt="#" />
         </a>
         <nav class="navigation">
           <a class="navigation-link">студия</a>
@@ -18,6 +18,7 @@
           <a href="#">контакты</a>
         </nav>
         <div class="cart">
+          <img src="img/cart-icon.svg" width="15" height="15" alt="#" />
           <a href="#" class="cart-link">корзина</a>
         </div>
       </div>
@@ -52,13 +53,7 @@
 
       <section class="categories">
         <div class="categories-item">
-          <img
-            class="categories-img"
-            src="img/illustration-1.svg"
-            width="240"
-            height="124"
-            alt=""
-          />
+          <img src="img/illustration-1.png" width="300" height="146" alt="#" />
           <h3 class="categories--title">Веб-сайты</h3>
           <p class="categories-text">
             Мир никогда не будет прежним после того как увидит ваш сайт!
@@ -67,14 +62,14 @@
         </div>
 
         <div class="item">
-          <img src="img/illustration-2.svg" width="240" height="124" alt="" />
+          <img src="img/illustration-2.png" width="300" height="146" alt="#" />
           <h3>Приложения</h3>
           <p>Покорите топ-10 приложений в AppStrore и Google Play</p>
           <a class="bth" href="#">заказать</a>
         </div>
 
         <div class="item">
-          <img src="img/index-logo/png" width="240" height="124" alt="1" />
+          <img src="img/illustration-3.png" width="300" height="146" alt="#" />
           <h3>Презентации</h3>
           <p>Вы даже не подозреваете, насколько вы изумительны!</p>
           <a class="bth" href="#">заказать</a>
@@ -98,8 +93,13 @@
           </ul>
         </div>
         <div class="right-column">
-          <img src="img/photo-1.jpg" width="240" height="120" alt="1" />
-          <p class="about-text">sinse 2004</p>
+          <img
+            src="img/nerds-illustration.png"
+            width="360"
+            height="208"
+            alt="#"
+          />
+          <p class="about-text">С 2004 года любим точность во всем:</p>
           <p>Как мы работаем:</p>
           <ul>
             <li>
@@ -115,21 +115,24 @@
         </div>
       </div>
       <div class="partner">
-        <a class="partner-item" href="#"
-          ><img src="img/logo-1.png" width="240" height="88" alt="Html academy"
+        <a class="partner-item" href="#">
+          <img src="img/logo-1.png" width="99" height="68" alt="Html academy"
         /></a>
-        <a class="partner-item" href="#"
-          ><img
+
+        <a class="partner-item" href="#">
+          <img
             src="img/logo-2.png"
-            width="240"
-            height="88"
+            width="209"
+            height="90"
             alt="Barbershop Borodinsky"
         /></a>
-        <a class="partner-item" href="#"
-          ><img src="img/logo-3.png" width="240" height="88" alt="Pink"
+
+        <a class="partner-item" href="#">
+          <img src="img/logo-3.png" width="185" height="82" alt="Pink"
         /></a>
-        <a class="partner-item" href="#"
-          ><img src="img/logo-4.png" width="240" height="88" alt="Mishka"
+
+        <a class="partner-item" href="#">
+          <img src="img/logo-4.png" width="173" height="84" alt="Mishka"
         /></a>
       </div>
     </main>
@@ -137,18 +140,27 @@
       <section class="map">
         <div class="contacts">
           <h3>Nёrds design studio</h3>
-          <p>191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
+          <p>191186, Санкт-Петербург,</p>
+          <p>ул. Б. Конюшенная, д. 19/8</p>
           <p>тел. <a href="tel:+78122757575">+7(812)2757575</a></p>
           <a class="bth" href="#">напишите нам</a>
         </div>
-
-        <img src="#" width="0" height="0" alt="" />
+        \
+        <img src="img/map.jpg" width="1440" height="416" alt="#" />
       </section>
       <div class="contanier">
         <section class="socials">
-          <a class="socials-bth socials-bth-vk" href="#">ВКонтакте</a>
-          <a class="socials-bth socials-bth-fb" href="#">Фейсбук</a>
-          <a class="socials-bth socials-bth-inst" href="#">Инстограмм</a>
+          <a class="socials-bth socials-bth-vk" href="#">
+            <img src="img/vk-icon.svg" width="21" height="21" alt="#" />
+          </a>
+
+          <a class="socials-bth socials-bth-fb" href="#">
+            <img src="img/vk-icon.svg" width="21" height="21" alt="#"
+          /></a>
+
+          <a class="socials-bth socials-bth-inst" href="#">
+            <img src="img/vk-icon.svg" width="21" height="21" alt="#"
+          /></a>
         </section>
         <section class="friends">
           <b>Давайте дружить, это выгодно!</b>
@@ -156,5 +168,14 @@
         </section>
       </div>
     </footer>
-  </body>
+<div class="popup">
+  <p>Напишите нам</p>
+  <form action="#" method="post">
+    <label>Ваше имя:<input type="text" name="name" value="" placeholder="Имя Фамилия"></label>
+    <label>Ваше e-mail:<input type="text" name="e-mail" value="" placeholder="email@example.com"></label>
+    <label>Текст письма:<textarea name="message" id="message" placeholder="В свободной форме"></textarea></label>
+  </form>
+  <button class="bth" type="submit">Отправить</button>
+</div>
+</body>
 </html>
