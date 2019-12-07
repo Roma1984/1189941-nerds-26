@@ -3,7 +3,10 @@
   <head>
     <meta charset="utf-8" />
     <title>HTML Academy: Нёрдс</title>
+
+    <link rel="stylesheet" href="css/style.css">
   </head>
+
   <body>
     <header class="main-header">
       <div class="container">
@@ -21,11 +24,13 @@
           <a href="#" class="cart-link">корзина</a>
         </div>
       </div>
+
     </header>
 
     <main class="container">
       <h1>Магазин готовых шаблонов</h1>
       <form class="container-filter" method="get" action="#">
+
     <fieldset>
       <legend class="filter">Стоимость</legend>
         <div class="filter-controls">
@@ -36,7 +41,7 @@
       </fieldset>
 
     <fieldset>
-        <legend class="form-label">Сетка:</legend>
+        <legend class="grid">Сетка:</legend>
         <ul class="grid-list">
           <li>
             <input class="grid-item" type="radio" name="grid-item" id="adaptive" value="adaptive" checked>
@@ -52,29 +57,29 @@
           </li>
         </ul>
       </fieldset>
-      <fieldset class="form-label">
 
-        <legend class="form-label">Особенности:</legend>
-        <ul>
+      <fieldset>
+        <legend class="features">Особенности:</legend>
+        <ul class="features-list">
           <li>
-            <input class="features" type="checkbox" name="features" id="checkbox" value="checkbox" checked>
-            <label for="checkbox">Слайдер</label>
+            <input class="features-item" type="checkbox" name="slider" id="slider"  checked>
+            <label for="slider">Слайдер</label>
           </li>
           <li>
-            <input class="features" type="checkbox" name="features" id="benefits-block" value="benefits-block">
-            <label for="checkbox">Блок преимуществ</label>
+            <input class="features-item" type="checkbox" name="benefits-block" id="benefits-block">
+            <label for="benefits-block">Блок преимуществ</label>
           </li>
           <li>
-            <input class="features" type="checkbox" name="features" id="news" value="news" checked>
-            <label for="checkbox">Новости</label>
+            <input class="features-item" type="checkbox" name="news" id="news" checked>
+            <label for="news">Новости</label>
           </li>
           <li>
-            <input class="features" type="checkbox" name="features" id="gallery" value="gallery">
-            <label for="checkbox">Галерея</label>
+            <input class="features-item" type="checkbox" name="gallery" id="gallery">
+            <label for="gallery">Галерея</label>
           </li>
           <li>
-            <input class="features" type="checkbox" name="features" id="basket" value="basket">
-            <label for="checkbox">Корзина</label>
+            <input class="features-item" type="checkbox" name="basket" id="basket">
+            <label for="basket">Корзина</label>
           </li>
         </ul>
 
@@ -86,9 +91,13 @@
       <div class="content-right">
         <div class="filter">
           <h3>Сортировать:</h3>
-          <a href="#">По цене</a>
-          <a href="#">По типу</a>
-          <a href="#">По названию</a>
+          <ul>
+          <li><a href="#">По цене</a></li>
+          <li><a href="#">По типу</a></li>
+          <li><a href="#">По названию</a></li>
+          <li><a class="down" href="#"></a></li>
+          <li><a class="up" href="#"></a></li>
+          </ul>
         </div>
         </div>
 
@@ -96,55 +105,53 @@
         <div class="product-item">
           <img src="img/img-sedona.jpg" width="360" height="576" alt="Sedona">
           <div class="product-hidden">
-            <h2>Sedona</h2>
+            <a><h2>Sedona</h2></a>
             <p>Информационный сайт для туристов</p>
-            <a href="" class="btn">9900₽</a>
+            <a href="#" class="btn">9900₽</a>
           </div>
 
           <div class="product-item">
             <img src="img/img-pink.jpg" width="360" height="576" alt="Pink">
             <div class="product-item">
-              <h2>Pink</h2>
-              <p>
-                Устали от серости мего полиса ? Нам есть, что Вам предложить!
-              </p>
-              <a href="" class="btn">9900₽</a>
+             <a><h2>Pink</h2></a>
+              <p>Устали от серости мего полиса ? Нам есть, что Вам предложить!</p>
+              <a href="#" class="btn">9900₽</a>
             </div>
           </div>
 
           <div class="product-item">
             <img src="img/img-barbershop.jpg" width="360" height="576" alt="Barbershop">
             <div class="product-item">
-              <h2>Barbershop</h2>
+                  <a><h2>Barbershop</h2></a>
               <p>Стрижка у нас это выгодно!</p>
-              <a href="" class="btn">9900₽</a>
+              <a href="#" class="btn">9900₽</a>
             </div>
           </div>
 
           <div class="product-item">
             <img  src="img/img-mishka.jpg" width="360" height="576" alt="Mishka">
             <div class="product-item">
-              <h2>Mishka</h2>
+              <a><h2>Mishka</h2></a>
               <p>Вязаные корзинки</p>
-              <a href="" class="btn">9900₽</a>
+              <a href="#" class="btn">9900₽</a>
             </div>
           </div>
 
           <div class="product-item">
             <img src="img/img-aplus.jpg" width="360" height="576" alt="A Plus">
             <div class="product-item">
-              <h2>A Plus</h2>
+                 <a><h2>A Plus</h2></a>
               <p>Учеба еще никогда не была такой интересной</p>
-              <a href="" class="btn">9900₽</a>
+              <a href="#" class="btn">9900₽</a>
             </div>
           </div>
 
           <div class="product-item">
             <img src="img/img-kvast.jpg" width="360" height="576" alt="Кваст" />
             <div class="product-item">
-              <h2>Кваст</h2>
+               <a><h2>>Кваст</h2></a>
               <p>Крафтовый квас всему голова!</p>
-              <a href="" class="btn">9900₽</a>
+              <a href="#" class="btn">9900₽</a>
             </div>
           </div>
         </div>
@@ -153,7 +160,7 @@
           <a class="active">1</a>
           <a href="#">2</a>
           <a href="#">3</a>
-          <button class="paginator-next" type="submit">Следующая</button>
+          <button class="paginator-next" type="button">Следующая</button>
         </div>
       </section>
     </main>
@@ -170,31 +177,33 @@
         <img src="img/map.jpg" width="1440" height="416" alt="#" />
       </section>
       <div class="contanier">
+
         <section class="socials">
           <a class="socials-bth socials-bth-vk" href="#">
-          <img src="img/vk-icon.svg" width="21" height="21" alt="#"></a>
+            <img src="img/vk-icon.svg" width="21" height="21" alt="#"></a>
 
           <a class="socials-bth socials-bth-fb" href="#">
-          <img src="img/vk-icon.svg" width="21" height="21" alt="#"></a>
+            <img src="img/fb-icon.svg" width="21" height="21" alt="#"></a>
 
           <a class="socials-bth socials-bth-inst" href="#">
-            <img src="img/vk-icon.svg" width="21" height="21" alt="#"></a>
+            <img src="img/insta-icon.svg" width="21" height="21" alt="#"></a>
         </section>
 
         <section class="friends">
           <b>Давайте дружить, это выгодно!</b>
           <p>Скидка 10% для друзей из социальных сетей</p>
         </section>
-      </div>
-</footer>
-<div class="popup">
-<p>Напишите нам</p>
-<form action="#" method="post">
-  <label>Ваше имя:<input type="text" name="name" value="" placeholder="Имя Фамилия"></label>
-  <label>Ваше e-mail:<input type="text" name="e-mail" value="" placeholder="email@example.com"></label>
-  <label>Текст письма:<textarea name="message" id="message"  placeholder="В свободной форме"></textarea></label>
- </form>
-<button class="bth" type="submit">Отправить</button>
-</div>
-  </body>
-</html>
+        </div>
+        </footer>
+        <div class="popup">
+          <p>Напишите нам</p>
+          <form action="#" method="post">
+            <label>Ваше имя:<input type="text" name="name" value="" placeholder="Имя Фамилия"></label>
+            <label>Ваше e-mail:<input type="text" name="e-mail" value="" placeholder="email@example.com"></label>
+            <label>Текст письма:<textarea name="message" id="message" rows="5" placeholder="В свободной форме"></textarea></label>
+            <button class="bth" type="submit">Отправить</button>
+          </form>
+        </div>
+        </body>
+
+        </html>
