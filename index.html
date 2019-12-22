@@ -9,45 +9,36 @@
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700" rel="stylesheet">
   </head>
 
-  <body>
-    <header class="main-header">
-      <div class="container">
-        <a class="logo">
-          <img src="img/nerds-logo.svg" width="160" height="65" alt="#"
-        /></a>
+<body>
+  <header class="main-header">
+    <div class="container">
+      <a class="logo">
+        <img src="img/nerds-logo.svg" width="160" height="65" alt="#"></a>
+      <nav class="navigation">
+        <a class="navigation-link">студия</a>
+        <a class="navigation-link" href="#">клиенты</a>
+        <a href="catalog.html">магазин</a>
+        <a class="navigation-link" href="#">контакты</a>
+      </nav>
 
-        <nav class="navigation">
-          <a class="navigation-link">студия</a>
-          <a class="navigation-link" href="#">клиенты</a>
-          <a href="catalog.html">магазин</a>
-          <a class="navigation-link" href="#">контакты</a>
-        </nav>
-        <div class="cart">
-          <img src="img/cart-icon.svg" width="15" height="15" alt="#" />
-          <a href="#" class="cart-link">корзина</a>
-        </div>
+
+      <div class="cart">
+
+        <a href="#" class="cart-link">корзина</a>
       </div>
-    </header>
+    </div>
+  
+  </header>
 
    <main class="page-content">
 
 <section class="slider">
   <div class="container">
     <h2 class="visually-hidden">Преимущества</h2>
-     <!-- <div class="slider-controls">
-      <i class="active"></i>
-      <i></i>
-      <i></i>
-    </div> -->
-
-<input class="visually-hidden" type="radio" id="product-1" name="toggle" checked>
-<input class="visually-hidden" type="radio" id="product-2" name="toggle">
-<input class="visually-hidden" type="radio" id="product-3" name="toggle">
-
 <div class="slider-controls">
-  <label class="slider-controls-item slider-controls-item--1" for="product-1">Первый</label>
-  <label class="slider-controls-item slider-controls-item--2" for="product-2">Второй</label>
-  <label class="slider-controls-item slider-controls-item--3" for="product-3">Третий</label>
+  <button class="slider-controls-item slider-controls-item--1" for="product-1">Первый</button>
+  <botton class="slider-controls-item slider-controls-item--2" for="product-2">Второй</botton>
+  <botton class="slider-controls-item slider-controls-item--3" for="product-3">Третий</botton>
 </div>
         <ul class="slider-list">
           <li class="slider-item">
@@ -100,17 +91,15 @@
 
       <div class="about">
         <div class="left-column">
-          <b class="about-header"
+          <h2 class="about-header"
             >Мы — маленькая, но гордая
-            <p>дизайн-студия из Краснодара.</p></b
-          >
+            дизайн-студия из Краснодара.</h2>
           <p class="about-promo ">
-            Исповедуем принципы минимализма и чистоты. Ставим математический
-            расчет
-          </p>
-          <p>выше креатива. Работаем не покладая рук, как роботы.</p>
-          <p class="about-promo-h">Выполняем заказы на разработку:</p>
-          <ul>
+          Исповедуем принципы минимализма и чистоты. Ставим математический расчет
+          превыше креатива. Работаем не покладая рук, как роботы..</p>
+          <h3>Выполняем заказы на разработку:</h3>
+          <ul class="about-promo-h">
+
             <li>Веб-сайтов любой сложности</li>
             <li>Мобильных приложений для iOS и Android</li>
             <li>Слайдшоу и видео для корпоративных презентаций</li>
@@ -170,16 +159,17 @@
     <footer class="main-footer">
       <section class="map">
         <div class="contacts">
-          <h3>Nёrds design studio</h3>
-          <p>191186, Санкт-Петербург,</p>
-          <p>ул. Б. Конюшенная, д. 19/8</p>
+          <h1 class="nerds">Nёrds design studio</h1>
+          <p class="adres">191186, Санкт-Петербург,
+           ул. Б. Конюшенная, д. 19/8</p>
           <p>тел. <a href="tel:+78122757575">+7(812)2757575</a></p>
           <a class="bth" href="#">напишите нам</a>
         </div>
+
         <img src="img/map.jpg" width="1440" height="416" alt="#" />
       </section>
 
-      <div class="contanier">
+      <div class="contanier-socials">
         <section class="socials">
           <a class="socials-bth socials-bth-vk" href="#">
             <img src="img/vk-icon.svg" width="21" height="21" alt="#"
@@ -200,7 +190,7 @@
         </section>
       </div>
     </footer>
-    <div class="popup">
+    <!-- <div class="popup">
       <button class="popup-close" type="button" title="Закрыть">X</button>
       <form action="#" method="post">
         <label
@@ -227,6 +217,6 @@
         ></label>
         <button class="bth" type="submit">Отправить</button>
       </form>
-    </div>
+    </div> -->
   </body>
 </html>
