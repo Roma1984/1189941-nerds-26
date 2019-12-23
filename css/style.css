@@ -1,5 +1,5 @@
 body {
-min-height: 1200px;
+min-height: 1160px;
 margin: 0;
 padding: 0;
 font-family: 'Roboto', 'Arial', sans-serif;
@@ -12,37 +12,49 @@ a {
 text-decoration: none;
 }
 .main-header {
-margin: 0 auto;
 background-color: #eee;
 text-transform: uppercase;
 padding-top: 50px;
 }
 
 .navigation {
-list-style: none;
-margin: 0;
-padding: 0;
-}
+  display: flex;
+   }
 .container {
-  width: 1160px;
-    margin: 0 auto;
+
 justify-content: space-between;
 margin: 0 auto;
 width: 1180px;
-background-color: #eee;
+
 }
 .main-header
 .container {
+    width: 1160px;
+    margin: 0 auto;
 display: flex;
 }
 
-.cart {
-list-style: none;
-}
-.cart-link  {
+.cart   {
+  max-width: 160px;
+  padding-left: 50px;
 background-image: url("../img/cart-icon.svg");
 background-repeat: no-repeat;
+background-position: 0 0;
+opacity: 1;
 }
+.navigation a,
+.cart a {
+  display: block;
+  padding: 25px 20px;
+  vertical-align: middle;
+}
+.navigation-link:hover::before,
+.navigation-link:focus::before,
+.navigation-link:active::before {
+background-color: #e74246;
+}
+
+
 .visually-hidden {
 position: absolute;
 width: 1px;
@@ -129,7 +141,7 @@ max-width: 600px;
 margin: 0;
 margin-bottom: 27px;
 font-size: 55px;
-line-height: 55px;
+line-height: 50px;
 font-weight: 500;
 }
 .slider-item p {
@@ -172,9 +184,17 @@ justify-content: space-between;
 .categories-item {
 width: 300px;
 }
-.categories-title {
-font-size: 24px;
+
+h3 {
+  display: block;
+    font-size: 1.17em;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold
 }
+
 .bth-red {
 display: block;
 box-sizing: border-box;
@@ -335,18 +355,16 @@ padding: 40px 50px;
 .contanier-socials {
 display: flex;
 width: 1160px;
-margin: 0 auto;
+margin: auto;
 margin-top: 40px;
 }
 .socials {
 padding-top: 60px;
 padding-bottom: 60px;
-margin: 0;
 margin: auto;
 text-align: center;
 display: flex;
-margin-left: 0 auto;
-}
+ }
 .socials-bth-vk {
 margin: 20px;
 display: flex;
@@ -408,7 +426,10 @@ font-size: 16px;
 line-height: 22px;
 color: #444;
 }
-
+img {
+  max-width: 100%;
+  height: auto;
+}
 
 
 
@@ -426,13 +447,13 @@ list-style-type: none;
 }
 
 .wrapper-title  {
-padding-top: 80px;
+padding-top: 50px;
     padding-bottom: 115px;
     text-align: center;
     background-color: #eee;
 }
-.wrapper-title h1 { display: block;
-    font-size: 55px;
+.wrapper-title h1 {
+  display: block;
     line-height: 55px;
     font-weight: 500;
     padding: 0;
