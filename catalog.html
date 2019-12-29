@@ -16,54 +16,54 @@
           <img src="img/nerds-logo.svg" width="160" height="65" alt="Nerds" />
         </a>
         <nav class="navigation">
-          <a class="navigation-link">студия</a>
+          <a class="navigation-link" href="index.html">студия</a>
           <a class="navigation-link" href="#">клиенты</a>
-          <a class="current">магазин</a>
+          <a class="navigation-link-active">магазин</a>
           <a class="navigation-link" href="#">контакты</a>
         </nav>
-        <div class="cart">
 
-          <a href="#" class="cart-link">корзина</a>
+        <div class="cart">
+          <a class="cart-link" href="#" >корзина</a>
         </div>
       </div>
-    </header>
+       </header>
 
     <main class="container-catalog">
       <div class="wrapper-title"><h1>Магазин готовых шаблонов</h1></div>
       <div class="container-wrapper">
-        <form class="container-filter" method="get" action="#">
-          <fieldset>
 
-          <legend class="range-title">Стоимость:</legend>
-          <div class="range-controls">
-            <div class="range-scale">
-              <div class="range-bar"></div>
+        <form class="container-filter" method="get" action="https://echo.htmlacademy.ru">
+              <fieldset class="filter-item">
+          <legend class="filter-title">Стоимость:</legend>
+          <div class="range-filter">
+            <div class="range-controls">
+              <div class="scale">
+                <div class="bar" style="margin-left:  0%; width: 80%"></div>
+              </div>
+              <div class="toggle toggle-min"></div>
+              <div class="toggle toggle-max"></div>
             </div>
-            <div class="range-bar-min"></div>
-            <div class="range-bar-max"></div>
+            <div class="price-controls">
+              <label class="min-price">от <input name="min-price" type="text" value="0"></label>
+              <label class="max-price">до <input name="max-price" type="text" value="15000"></label>
+            </div>
           </div>
+        </fieldset>
 
-
-<div class="range-price">
-<label class="range-min">от<input class="min-price" value="0"></label>
-<label class="range-max">до<input class="max-price" value="15000"></label>
-
-            </div>
-          </fieldset>
-
-          <fieldset>
+        <fieldset>
             <legend class="grid-title">Сетка:</legend>
             <ul class="grid-list">
+
               <li>
      <input class="grid-item" type="radio" name="grid-item" id="adaptive" value="adaptive">
      <label class="grid-label grid-label-radio" for="adaptive">Адаптивная</label>
               </li>
+
               <li>
-
-
     <input class="grid-item" type="radio" name="grid-item" id="fixed" value="fixed"  checked>
     <label class="grid-label grid-label-radio" for="fixed">Фиксированная</label>
               </li>
+
               <li>
     <input class="grid-item" type="radio" name="grid-item" id="rubber" value="rubber">
     <label class="grid-label grid-label-radio" for="rubber">Резиновая</label>
@@ -78,18 +78,22 @@
                 <input class="features-item" type="checkbox" name="slider" id="slider" checked>
                 <label class="features-label features-label-chek" for="slider">Слайдер</label>
               </li>
+
               <li>
                 <input class="features-item" type="checkbox" name="benefits-block" id="benefits-block">
                 <label class="features-label features-label-chek" for="benefits-block">Блок преимуществ</label>
               </li>
+
               <li>
                 <input class="features-item" type="checkbox" name="news" id="news" checked>
                 <label class="features-label features-label-chek" for="news">Новости</label>
               </li>
+
               <li>
                 <input class="features-item" type="checkbox" name="gallery" id="gallery">
                 <label class="features-label features-label-chek" for="gallery">Галерея</label>
               </li>
+
               <li>
                 <input class="features-item" type="checkbox" name="cart" id="cart">
                 <label class="features-label features-label-chek" for="cart">Корзина</label>
@@ -108,25 +112,22 @@
               <li class="filter-item"><a href="#">По типу</a></li>
               <li class="filter-item"><a href="#">По названию</a></li>
             </ul>
+
 <div class="filter-toggle">
-              <a class="filter-down" href="#"></a>
-              <a class="filter-up" href="#"></a>
+              <a class="filter-down filter-link" href="#"></a>
+              <a class="filter-up filter-link" href="#"></a>
 </div>
           </div>
 
           <section class="product-list">
             <div class="product-item">
-              <img
-                src="img/img-sedona.jpg"
-                width="360"
-                height="576"
-                alt="Sedona"
-              />
+              <img src="img/img-sedona.jpg" width="360" height="576" alt="Sedona">
               <div class="product-hidden">
                 <a><h2>Sedona</h2></a>
-                <p>Информационный сайт</p>
-                <p>для туристов</p>
-                <a href="#" class="bth">9900₽</a>
+                <p>Информационный сайт
+                  для туристов</p>
+                <button type="button" class="bth-hidden">9 900 руб.</button>
+
               </div>
             </div>
 
@@ -134,9 +135,8 @@
               <img src="img/img-pink.jpg" width="360" height="576" alt="Pink" />
               <div class="product-hidden">
                 <a><h2>Pink</h2></a>
-                <p>Продуктовый лендинг</p>
-                <p>приложения для iOS и Android</p>
-                <a href="#" class="bth">9900₽</a>
+                <p>Продуктовый лендинг приложения для iOS и Android</p>
+            <button type="button" class="bth-hidden">9 900 руб.</button>
               </div>
             </div>
 
@@ -149,9 +149,9 @@
               />
               <div class="product-hidden">
                 <a><h2>Barbershop</h2></a>
-                <p>Сайт салона красоты.</p>
-                <p>Для мужчин, да.</p>
-                <a href="#" class="bth">9900₽</a>
+                <p>Сайт салона красоты.
+                  Для мужчин, да.</p>
+              <button type="button" class="bth-hidden">9 900 руб.</button>
               </div>
             </div>
 
@@ -164,9 +164,8 @@
               />
               <div class="product-hidden">
                 <a><h2>Mishka</h2></a>
-                <p>Интернет-магазин</p>
-                <p>вязаных игрушек</p>
-                <a href="#" class="bth">9900₽</a>
+                <p>Интернет-магазин вязаных игрушек</p>
+            <button type="button" class="bth-hidden">9 900 руб.</button>
               </div>
             </div>
 
@@ -179,9 +178,8 @@
               />
               <div class="product-hidden">
                 <a><h2>A Plus</h2></a>
-                <p>Лендинг курсов повышения</p>
-                <p>квалификации</p>
-                <a href="#" class="bth">9900₽</a>
+                <p>Лендинг курсов повышения квалификации</p>
+          <button type="button" class="bth-hidden">9 900 руб.</button>
               </div>
             </div>
 
@@ -194,9 +192,8 @@
               />
               <div class="product-hidden">
                 <a><h2>Кваст</h2></a>
-                <p>Промо-сайт производителя</p>
-                <p>крафтового кваса</p>
-                <a href="#" class="bth">9900₽</a>
+                <p>Промо-сайт производителя крафтового кваса</p>
+      <button type="button" class="bth-hidden">9 900 руб.</button>
               </div>
             </div>
 
@@ -212,16 +209,19 @@
     </main>
 
     <footer class="main-footer">
-      <section class="map">
-        <div class="contacts">
-          <h3>Nёrds design studio</h3>
-          <p>191186, Санкт-Петербург,</p>
-          <p>ул. Б. Конюшенная, д. 19/8</p>
-          <p>тел. <a href="tel:+78122757575">+7(812)2757575</a></p>
-          <a class="bth" href="#">напишите нам</a>
-        </div>
-        <img src="img/map.jpg" width="1440" height="416" alt="#" />
-      </section>
+      <div class="container">
+        <section class="map">
+
+          <div class="contacts">
+            <h3 class="nerds">NЁRDS DESIGN STUDIO</h3>
+            <p class="adres">191186, Санкт-Петербург,
+              ул. Б. Конюшенная, д. 19/8</p>
+            <p>тел. <a href="tel:+78122757575">+7(812)2757575</a></p>
+            <a class="bth" href="#">напишите нам</a>
+          </div>
+
+          <img src="img/map.jpg" width="1440" height="416" alt="#" />
+        </section>
 
       <div class="contanier-socials">
         <section class="socials">
@@ -238,11 +238,12 @@
           /></a>
         </section>
 
-        <section class="friends">
-          <b>Давайте дружить, это выгодно!</b>
-          <p>Скидка 10% для друзей из социальных сетей</p>
-        </section>
+       <section class="friends">
+        <b class="friends-item">Давайте дружить, это выгодно!</b>
+        <p class="friends-title">Скидка 10% для друзей из социальных сетей.</p>
+      </section>
       </div>
+        </div>
     </footer>
     <!-- <div class="popup">
       <p>Напишите нам</p>
