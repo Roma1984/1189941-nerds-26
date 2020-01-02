@@ -9,6 +9,8 @@ body {
   color: #000;
 }
 a {
+  color: #000;
+  /* color: #666; */
   text-decoration: none;
 }
 .container {
@@ -23,8 +25,7 @@ a {
 }
 
 .navigation {
-  color: #000;
-  display: flex;
+   display: flex;
 }
 
 .main-header .container {
@@ -53,8 +54,7 @@ a {
 .navigation a {
   display: block;
   padding: 30px 25px;
-  vertical-align: middle;
-}
+  }
 .navigation-link:hover {
   color: red;
 }
@@ -204,17 +204,6 @@ a {
 .categories-item {
   width: 300px;
 }
-
-h3 {
-  display: block;
-  font-size: 1.17em;
-  margin-block-start: 1em;
-  margin-block-end: 1em;
-  margin-inline-start: 0px;
-  margin-inline-end: 0px;
-  font-weight: bold;
-}
-
 .btn-red {
   display: block;
   box-sizing: border-box;
@@ -282,7 +271,7 @@ h3 {
   border-bottom: 2px solid #eee;
   display: flex;
   justify-content: space-between;
-  margin: 0;
+ 
   margin: auto;
 }
 .left-column h2 {
@@ -300,11 +289,6 @@ h3 {
 }
 .about-promo {
   width: 620px;
-  display: block;
-  margin-block-start: 1em;
-  margin-block-end: 1em;
-  margin-inline-start: 0px;
-  margin-inline-end: 0px;
 }
 
 .about-promo + h3 {
@@ -312,8 +296,7 @@ h3 {
   padding-top: 20px;
   padding-bottom: 15px;
   font-size: 16px;
-  line-height: 24px;
-  font-weight: 600;
+  line-height: 24px; 
 }
 .about-promo-h li {
   list-style: none;
@@ -347,13 +330,6 @@ h3 {
 .right-column ul {
   padding: 0;
 }
-/* .about-text p {
-      display: block;
-    text-align: center;
-    font-weight: bold;
-    text-transform: uppercase;
-    margin-top: 25px
-} */
 .about-text sup {
   font-size: 28px;
 }
@@ -396,7 +372,7 @@ h3 {
   color: #666;
   width: 202px;
 }
-.map { z-index: 3;
+ .map { z-index: 3;
   height: 416px;
   position: relative;
 }
@@ -412,6 +388,7 @@ h3 {
 
 }
 .contanier-socials {
+  padding-bottom: 70px;
   display: flex;
   margin-top: 40px;
 }
@@ -439,7 +416,6 @@ h3 {
 .socials-btn-vk:focus {
   background-color: red;
 }
- 
 .socials-btn-fb {
   margin: 20px;
   display: flex;
@@ -485,16 +461,14 @@ h3 {
   line-height: 22px;
   color: #444;
 }
-
 fieldset {
   padding: 0;
-  margin-top: 50px;
+  
   border: none;
 }
 ul li {
   list-style-type: none;
 }
-
 .wrapper-title {
   margin-bottom: 60px;
   padding-top: 70px;
@@ -513,14 +487,12 @@ ul li {
 }
 .container-wrapper {
   display: flex;
-
   justify-content: space-between;
   margin: auto;
 }
 .container-filter {
   margin: 0;
-  margin-right: 120px;
-}
+ }
 .container-filter legend {
   display: inline-block;
   text-transform: uppercase;
@@ -531,8 +503,9 @@ ul li {
 }
 
 .range-filter {
+  margin-bottom: 60px;
   width: 260px;
-  margin-top: 49px;
+  margin-top: 40px;
 }
 .filter-item legend {
   margin: 0;
@@ -564,7 +537,6 @@ ul li {
 .range-controls .toggle {
   position: absolute;
   top: 31px;
-  left: 0;
   width: 4px;
   height: 4px;
   padding: 0;
@@ -608,14 +580,14 @@ ul li {
 .grid-list {
   padding-left: 0;
 }
-.grid-title {
+/* .grid-title {
   display: inline-block;
   text-transform: uppercase;
   font-size: 18px;
   line-height: 30px;
   font-weight: 600;
   padding-bottom: 10px;
-}
+} */
 .grid-label {
   position: relative;
   font-size: 16px;
@@ -647,14 +619,6 @@ input[type="radio"]:checked + label::before {
   left: 0;
   position: absolute;
   background-image: url("../img/radio-on.svg");
-}
-.features-title {
-  display: inline-block;
-  text-transform: uppercase;
-  font-size: 18px;
-  line-height: 30px;
-  font-weight: 600;
-  padding-bottom: 10px;
 }
 .features-item {
   display: none;
@@ -700,9 +664,9 @@ input[type="checkbox"]:checked + label::before {
 .filter-sort-title {
   display: inline-block;
   font-size: 18px;
-  line-height: 18px;
+  /* line-height: 18px; */
   font-weight: 600;
-  margin-right: 240px;
+  margin-right: 267px;
 }
 
 .features-list {
@@ -717,25 +681,32 @@ input[type="checkbox"]:checked + label::before {
   cursor: pointer;
   color: #283136;
 }
-.filter-item-active {
-  display: inline-block;
-  font-size: 14px;
-  line-height: 18px;
-  margin-left: 27px;
+
+ .filter-right {
+  display:flex
+}  
+.filter-sort {
+  display: flex;
 }
-.filter-item-active a {
-  color: #000;
+.filter-sort-title + li {
   opacity: 1;
 }
-
-.filter-item a {
+.filter-sort-item  {
+  margin-right: 30px;
+  font-size: 14px;
   color: #000;
-  opacity: 0.3;
+   opacity: 0.3; 
   text-decoration: none;
+}
+.filter-sort-item a:hover,
+.filter-sort-item a:active,
+.filter-sort-item a:focus {
+  opacity: 0.3;
+  color: #444;
 }
 .filter-toggle {
   display: inline-block;
-  margin-left: 37px;
+  margin-left: 15px; 
 }
 .filter-link {
   display: inline-block;
@@ -747,37 +718,21 @@ input[type="checkbox"]:checked + label::before {
   background-repeat: no-repeat;
 }
 .filter-up {
+  opacity: 0.3;
   margin-left: 5px;
-
   background-image: url("../img/icon-up-dir.svg");
   background-repeat: no-repeat;
 }
-.filter-item-active {
-  display: inline-block;
-  font-size: 14px;
-  line-height: 18px;
-  margin-left: 27px;
-}
-.filter-item-active a {
-  color: #000;
-  opacity: 1;
-}
 .filter-item {
   padding: 0;
-  display: inline-block;
-  font-size: 14px;
+  display: inline-block;  
   line-height: 18px;
-
 }
-.filter-item a {
-  color: #000;
-  opacity: 0.3;
-  text-decoration: none;
-}
-.filter-toggle {
+ 
+/* .filter-toggle {
   display: inline-block;
   margin-left: 37px;
-}
+} */
 .filter-down a {
   width: 9px;
   height: 11px;
@@ -828,7 +783,6 @@ input[type="checkbox"]:checked + label::before {
   text-align: center;
   margin-top: 345px;
   font-size: 16px;
-  display: flex;
   display: inline-block;
 }
 .product-hidden p {
@@ -842,6 +796,7 @@ input[type="checkbox"]:checked + label::before {
 }
 
 .btn-hidden {
+  font-size: 16px;
   color: #ffffff;
   width: 200px;
   height: 50px;
@@ -864,10 +819,14 @@ input[type="checkbox"]:checked + label::before {
   cursor: pointer;
   border-radius: 5px;
 }
+.features-btn:hover,
+.features-btn:active,
+.features-btn:focus {
+  opacity: 0.4;
+}
 .paginator {
   display: block;
 }
-
 .paginator-link {
   display: inline-block;
   box-sizing: border-box;
@@ -902,9 +861,13 @@ input[type="checkbox"]:checked + label::before {
   border-radius: 5%;
   margin-right: 6px;
 }
+.paginator-next:hover,
+.paginator-next:active,
+.paginator-next:focus {
+  opacity: 0.4;
+}
 
-
-  {
+ 
 
  .popup {
   visibility: hidden;
