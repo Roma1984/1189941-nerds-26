@@ -357,7 +357,7 @@ a {
 }
 .contacts {
   display: block;
-  z-index: 1;
+  z-index: 5;
   position: absolute;
   top: 40px;
   margin: 0;
@@ -372,21 +372,47 @@ a {
   color: #666;
   width: 202px;
 }
+.btn-modal {
+  display: block;
+  box-sizing: border-box;
+  line-height: 18px;
+  text-decoration: none;
+  text-transform: uppercase;
+  text-align: center;
+  padding-top: 17px;
+  padding-bottom: 17px;
+  border-radius: 5px;
+  width: 220px;
+  color: #ffffff;
+  font-size: 16px;
+  background-color: #fb565a;
+}
+.btn-modal:hover,
+.btn-modal:active,
+.btn-modal:focus {
+  background-color: #d6494d;
+}
+
+
+
+
+
  .map { z-index: 3;
   height: 416px;
   position: relative;
 }
-.map-map {
+.map-map { z-index: 1;
   position: absolute;
   top: 0;
   left: 50%;
   transform: translateX(-50%);
 }
 .map-interactive {
-  z-index: 3;
-
-
+  z-index: 2;
+  position: absolute;
 }
+
+
 .contanier-socials {
   padding-bottom: 70px;
   display: flex;
@@ -728,11 +754,6 @@ input[type="checkbox"]:checked + label::before {
   display: inline-block;  
   line-height: 18px;
 }
- 
-/* .filter-toggle {
-  display: inline-block;
-  margin-left: 37px;
-} */
 .filter-down a {
   width: 9px;
   height: 11px;
@@ -740,7 +761,6 @@ input[type="checkbox"]:checked + label::before {
   background-image: url("../img/sort-down.svg");
   background-repeat: no-repeat;
 }
-
 .product-item::before {
   content: "";
   position: absolute;
@@ -794,7 +814,6 @@ input[type="checkbox"]:checked + label::before {
   padding: 0;
   width: 215px;
 }
-
 .btn-hidden {
   font-size: 16px;
   color: #ffffff;
@@ -805,7 +824,6 @@ input[type="checkbox"]:checked + label::before {
   margin: 0 auto;
   margin-top: 28px;
 }
-
 .features-btn {
   font-size: 16px;
   line-height: 20px;
@@ -869,8 +887,10 @@ input[type="checkbox"]:checked + label::before {
 
  
 
- .popup {
-  visibility: hidden;
+ .popup { 
+   z-index: 3; 
+  position: relative;
+ 
   width: 780px;
   height: 440px;
   background-color: #ffffff;
@@ -881,9 +901,12 @@ input[type="checkbox"]:checked + label::before {
   background: #ffffff;
   box-shadow: 5px 5px 10px #000;
   padding: 70px 100px;
+  display: none;
 }
 .popup h2 {
-  margin: 0;
+  margin-top: auto;
+  margin-bottom: 40px;
+  /* margin: 0; */
   font-size: 45px;
   font-weight: 500;
 }
@@ -898,26 +921,22 @@ input[type="checkbox"]:checked + label::before {
   display: flex;
   justify-content: space-between;
 }
-.modal-surname {
+.login {
   padding-left: 10px;
   width: 360px;
   height: 45px;
 }
-.modal-e-mail {
+.email {
   padding-left: 10px;
   width: 360px;
   height: 45px;
 }
 .modal-text {
-  padding: 10px 10px;
+  margin-top: 15px;
     font-weight: 500;
   width: 760px;
 }
-
-
-.popup-btn:hover,
-.popup-btn:active,
-.popup-btn:focus {
+.popup-btn {
   color: #ffffff;
   width: 200px;
   height: 50px;
@@ -925,6 +944,16 @@ input[type="checkbox"]:checked + label::before {
   background-color: #fb565a;
   font-size: 16px;
   margin: 0;
+}
+
+.popup-btn:hover,
+.popup-btn:active,
+.popup-btn:focus {
+  background-color: #e74246;
+  background-color: #d7373b;
+  color: rgba(255, 255, 255, 0.3);
+  box-shadow: 0 3px rgba(0, 0, 0, 0.1) inset;
+  
 }
 .modal-close {
   border: none;
@@ -939,4 +968,50 @@ input[type="checkbox"]:checked + label::before {
   background-repeat: no-repeat;
   background-color: transparent;
 }
+.popup-show {
+  display: block;
+  animation: bounce 0.6s;
+}
+.popup-error {
+  animation: shake 0.6s;
+}
 
+
+@keyframes bounce {
+  0% {
+    transform: translateY(-2000px);
+  }
+
+  70% {
+    transform: translateY(30px);
+  }
+
+  90% {
+    transform: translateY(-10px);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
+@keyframes shake {
+  0%,
+  100% {
+    transform: translateX(0);
+  }
+
+  10%,
+  30%,
+  50%,
+  70%,
+  90% {
+    transform: translateX(-10px);
+  }
+
+  20%,
+  40%,
+  60%,
+  80% {
+    transform: translateX(10px);
+  }
+}

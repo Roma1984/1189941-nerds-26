@@ -8,6 +8,7 @@
   <link rel="stylesheet" href="css/normalize.css" />
   <link rel="stylesheet" href="css/style.css" />
   <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700" rel="stylesheet" />
+
 </head>
 
 <body>
@@ -209,7 +210,7 @@
             191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8
           </p>
           <p>тел. <a href="tel:+78122757575">+7(812)2757575</a></p>
-          <a class="btn" href="#">напишите нам</a>
+          <a class="btn-modal" href="#">напишите нам</a>
         </div>
       </div>
 
@@ -254,24 +255,24 @@
     <form>
       <div class="modal">
         <div>
-          <p class="modal-name">Ваше имя:</p>
-          <input class="modal-surname" type="text" name="name" value="" placeholder="Имя Фамилия" />
+          <label class="modal-name">Ваше имя:</label>
+          <input class="login" type="text" name="login" value="" placeholder="Имя Фамилия" />
         </div>
 
         <div>
-          <p class="modal-email">Ваш e-mail:</p>
-          <input class="modal-e-mail" type="text" name="name" value="" placeholder="email@example.com" />
+          <label class="modal-email">Ваш e-mail:</label>
+          <input class="email" type="text" name="email" value="" placeholder="email@example.com" />
         </div>
       </div>
 
       <div>
-        <p class="modal-text">Текст письма:</p>
+        <label class="modal-text">Текст письма:</label>
         <textarea class="modal-text" name="message" id="message" rows="10" placeholder="В свободной форме"></textarea>
         <button class="popup-btn" type="submit">Отправить</button>
       </div>
     </form>
     <button class="modal-close" type="button">
-      <span class="visually-hidden">Заказать</span>
+      <span class="visually-hidden">Закрыть</span>
     </button>
   </section>
 </body>
