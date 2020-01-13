@@ -1,5 +1,5 @@
- 
-    var link = document.querySelector(".btn-modal");
+
+    var link = document.querySelector(".modal");
     var popup = document.querySelector(".popup");
 
     var close = popup.querySelector(".modal-close");
@@ -12,13 +12,13 @@
 
     var isStorageSupport = true;
   var storage = "";
-  
+
   try {
     storage = localStorage.getItem("login");
   } catch (err) {
     isStorageSupport = false;
   }
-    
+
     link.addEventListener("click", function (evt) {
       evt.preventDefault();
       popup.classList.add("popup-show");
@@ -29,7 +29,7 @@
     } else {
       login.focus();
     }
-    
+
       login.focus();
 
 });
@@ -45,7 +45,7 @@ close.addEventListener("click", function (evt) {
       evt.preventDefault();
 
       popup.classList.remove("popup-error");
-      popup.offsetWidth = popup.offsetWidth; 
+      popup.offsetWidth = popup.offsetWidth;
 
       popup.classList.add("popup-error");
     } else {
@@ -64,4 +64,3 @@ close.addEventListener("click", function (evt) {
       }
     }
   });
- 
