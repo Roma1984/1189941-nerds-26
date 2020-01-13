@@ -139,7 +139,7 @@ padding: 0;
 list-style: none;
 }
 .slider-item {
-height: 288px;
+height: 283px;
 display: none;
 padding: 65px 0 80px 0;
 }
@@ -697,6 +697,13 @@ position: absolute;
 background-image: url("../img/radio-off.svg");
 opacity: 0.4;
 }
+.grid-label-radio:hover::before{
+  opacity: 1;
+}
+.grid-label-radio:focus::before,
+.grid-label-radio:active::before {
+  opacity: 1;
+}
 .grid-item {
 display: none;
 }
@@ -731,6 +738,13 @@ left: 0;
 position: absolute;
 background-image: url("../img/checkbox-off.svg");
 opacity: 0.4;
+}
+.features-label-chek:hover::before {
+opacity: 1;
+}
+.features-label-chek:focus::before,
+.features-label-chek:active::before {
+  opacity: 1;
 }
 input[type="checkbox"]:checked + label::before {
 content: "";
