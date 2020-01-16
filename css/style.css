@@ -413,7 +413,7 @@ text-transform: uppercase;
 }
 
 .container-partner {
-  padding: 52px 0 33px 16px;
+  padding: 52px 0 43px 16px;
 margin-bottom: 80px;
 border-bottom: 2px solid #eee;
 display: flex;
@@ -427,6 +427,7 @@ opacity: 0.24;
 }
 .container-icon {
   width: 250px;
+  height: 90px;
   position: relative;
 }
 .container-icon:not(:nth-child(4n+4))::after {
