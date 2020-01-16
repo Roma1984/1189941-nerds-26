@@ -412,33 +412,50 @@ display: block;
 text-transform: uppercase;
 }
 
-.container-partner {
-  padding: 52px 0 43px 16px;
-margin-bottom: 80px;
-border-bottom: 2px solid #eee;
-display: flex;
-justify-content: space-around;
-align-items: center;
+.container-icon:not(:nth-child(4n+4))::after {
+  position: absolute;
+  content: "";
+  top: 60px;
+  right: -20px;
+  width: 2px;
+  height: 55px;
+  background-color: #d9c7c7;
+  display: block;
+  }
 
-}
+  .container-partner {
+  margin-bottom: 80px;
+  border-bottom: 2px solid #eee;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  }
+
+  .container-icon {
+  width: 260px;
+  height: 179px;
+  position: relative;
+  box-sizing: border-box;
+  }
 .partner-item {
   display: inline-block;
 opacity: 0.24;
 }
-.container-icon {
-  width: 250px;
-  height: 90px;
-  position: relative;
+.academy {
+  padding-top: 66px;
+  padding-left: 30px;
 }
-.container-icon:not(:nth-child(4n+4))::after {
-  position: absolute;
-  content: "";
-  top: 0;
-  right: 0;
-  width: 2px;
-  height: 55px;
-  background-color: #d9c7c7;
-display: block;
+.borodinsky {
+  padding-top: 49px;
+  padding-left: 26px;
+}
+.pink {
+  padding-top: 68px;
+  padding-left: 37px;
+}
+.mishka {
+  padding-top: 55px;
+  padding-left: 45px;
 }
 .partner-item:hover,
 .partner-item:focus,
@@ -462,11 +479,14 @@ width: 220px;
 font-size: 18px;
 }
 .contacts p {
+  padding-top: 11px;
+  line-height: 20px;
 margin-bottom: 5px;
 display: block;
-color: #666;
 width: 205px;
 }
+
+
 .contacts .modal {
 margin-top: 25px;
 background-color: #fb565a;
@@ -476,6 +496,7 @@ text-align: center;
 padding-top: 17px;
 padding-bottom: 17px;
 }
+
 .contacts .modal:hover {
   background-color: #fb565a;
 }
@@ -565,8 +586,8 @@ background-color: #fb565a;
 box-shadow: inset 0px 3px 0 0 rgba(0, 1, 1, 0.1);
 }
 .friends {
-margin-top: 35px;
-margin-left: 120px;
+  margin-top: 41px;
+  margin-left: 121px;
 }
 .friends-item {
 margin: 0;
