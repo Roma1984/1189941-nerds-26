@@ -33,67 +33,67 @@ text-transform: uppercase;
 padding-top: 50px;
 }
 .logo-link:hover {
-  opacity: 0.3;
+opacity: 0.3;
 }
 .logo-link:active {
 opacity: 0.5;
 }
 .navigation {
-  font-weight: 500;
-  margin-top: 30px;
-  display: flex;
-  }
-  .main-header .container {
-  justify-content: space-between;
-  width: 1200px;
-  margin: 0 auto;
-  display: flex;
-  }
-  .cart-link {
-  font-weight: 500;
-  color: #000;
-  padding-left: 5px;
-  position: relative;
-  display: block;
-  }
-  .cart-link::before {
-  content: "";
-  left: 0;
-  bottom: 5px;
-  position: absolute;
-  display: block;
-  width: 15px;
-  height: 15px;
-  background: url("../img/cart-icon.svg");
-  }
-  .navigation a {
-  margin-right: 45px;
-  display: block;
-  }
-   .navigation-link:not(.active):hover {
-    color: #fb565a;
-  }
-  .navigation-link:active {
-  color: #bcbcbc;
-  }
-    .cart-link:hover {
-      color: #fb565a;
-    }
-    .cart-link:active {
-      color: #bcbcbc;
-    }
-  .cart a {
-  margin-top: 30px;
-  padding-left: 40px;
-  }
-  .navigation-link.active::before {
-  content: "";
-  position: absolute;
-  background: #fb565a;
-  height: 2px;
-  width: 75px;
-  margin-top: 30px;
-  }
+font-weight: 500;
+margin-top: 30px;
+display: flex;
+}
+.main-header .container {
+justify-content: space-between;
+width: 1200px;
+margin: 0 auto;
+display: flex;
+}
+.cart-link {
+font-weight: 500;
+color: #000;
+padding-left: 5px;
+position: relative;
+display: block;
+}
+.cart-link::before {
+content: "";
+left: 0;
+bottom: 5px;
+position: absolute;
+display: block;
+width: 15px;
+height: 15px;
+background: url("../img/cart-icon.svg");
+}
+.navigation a {
+margin-right: 45px;
+display: block;
+}
+.navigation-link:not(.active):hover {
+color: #fb565a;
+}
+.navigation-link:active {
+color: #bcbcbc;
+}
+.cart-link:hover {
+color: #fb565a;
+}
+.cart-link:active {
+color: #bcbcbc;
+}
+.cart a {
+margin-top: 30px;
+padding-left: 40px;
+}
+.navigation-link.active::before {
+content: "";
+position: absolute;
+background: #fb565a;
+height: 2px;
+width: 75px;
+margin-top: 30px;
+}
 .visually-hidden {
 position: absolute;
 width: 1px;
@@ -474,12 +474,12 @@ text-align: center;
 padding-top: 17px;
 padding-bottom: 17px;
 }
- .btn.modal:hover {
-  background-color: #e74246;
+.btn.modal:hover {
+background-color: #e74246;
 }
 .btn.modal:active {
-  background-color: #d7373b;
-  box-shadow: 0px 3px 0px 0px #c13135 inset;
+background-color: #d7373b;
+box-shadow: 0px 3px 0px 0px #c13135 inset;
 }
 .map { z-index: 3;
 height: 416px;
@@ -750,8 +750,7 @@ opacity: 0.4;
 .features-label-chek:hover::before {
 opacity: 1;
 }
-.features-label-chek:focus::before,
-.features-label-chek:active::before {
+.features-label-chek:focus::before {
 opacity: 1;
 }
 input[type="checkbox"]:checked + label::before {
@@ -789,6 +788,10 @@ display: block;
 cursor: pointer;
 color: #283136;
 }
+input:focus + label::before {
+opacity: 1;
+
+}
 .filter-right {
 display:flex
 }
@@ -802,22 +805,22 @@ color: #000;
 text-decoration: none;
 }
 .filter-sort-item.active {
-  opacity: 1;
+opacity: 1;
 }
 .filter-sort-item.active:not(.active):hover {
-  opacity: 0.3;
+opacity: 0.3;
 }
 .filter-sort-item.active:active {
-  opacity: 0.5;
+opacity: 0.5;
 }
 .filter-sort-item {
-  opacity: 0.3;
+opacity: 0.3;
 }
 .filter-sort-item:hover{
-  opacity: 1;
+opacity: 1;
 }
 .filter-sort-item:active {
-  opacity: 0.5;
+opacity: 0.5;
 }
 .filter-toggle {
 display: inline-block;
@@ -942,11 +945,11 @@ margin-top: 26px;
 line-height: 0;
 }
 .btn.hidden:hover {
-  background-color: #e74246;
+background-color: #e74246;
 }
 .btn.hidden:active {
-  background-color: #d7373b;
-  box-shadow: 0px 3px 0px 0px #c13135 inset;
+background-color: #d7373b;
+box-shadow: 0px 3px 0px 0px #c13135 inset;
 }
 .btn.features-btn {
 margin-top: 46px;
@@ -1155,12 +1158,12 @@ font-size: 16px;
 margin: 0;
 }
 .popup-btn:hover {
-  background-color: #e74246;
+background-color: #e74246;
 }
 .popup-btn:active {
-  color: #e26f72;
-  background-color: #d7373b;
-  box-shadow: 0px 3px 0px 0px #c13135 inset;
+color: #e26f72;
+background-color: #d7373b;
+box-shadow: 0px 3px 0px 0px #c13135 inset;
 }
 .modal-close {
 border: none;
